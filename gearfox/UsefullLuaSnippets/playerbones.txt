@@ -1,0 +1,21 @@
+--I am using these too much in my gamemodes. Thought it would be nice to have them here
+
+/*
+	"ValveBiped.Bip01_Head1"
+	"ValveBiped.Bip01_R_Hand"
+	"ValveBiped.Bip01_L_Hand"
+	"ValveBiped.Bip01_Pelvis"
+	"ValveBiped.Bip01_R_Clavicle"
+	"ValveBiped.Bip01_L_Clavicle"
+	"ValveBiped.Bip01_Spine1"
+	"ValveBiped.Bip01_Spine2"
+	"ValveBiped.Bip01_Spine3"
+	"ValveBiped.Bip01_Spine4"
+
+	"eyes"
+	"mouth"
+	"chest"
+	"forward"
+	"anim_attachment_RH"
+	"anim_attachment_LH"
+*/

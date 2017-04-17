@@ -1,0 +1,34 @@
+local Fade = 0
+local TCol = table.Copy(MAIN_WHITECOLOR)
+
+local w,h = ScrW(),ScrH()
+local bbox = Vector(5,5,5)
+
+hook.Add("HUDPaint","CheckPassanger",function()
+	local pl = LocalPlayer()
+	
+	if (IsValid(pl:GetVehicle())) then Fade = 0 return end
+	
+	local Filt = ents.FindByClass("prop_vehicle_jeep")
+	table.Add(Filt,player.GetAll())
+	
+	local SPos = pl:GetShootPos()
+	local a = util.TraceHull({
+		start=SPos,
+		endpos=SPos+pl:GetAimVector()*50,
+		filter=Filt,
+		mins=-bbox,
+		maxs=bbox,
+	})
+	
+	if (IsValid(a.Entity) and a.Entity:GetClass() == "prop_vehicle_prisoner_pod") then	
+		Fade = math.min(1,Fade+FrameTime()*2)
+	else
+		Fade = math.max(0,Fade-FrameTime()*2)
+	end
+	
+	if (Fade > 0) then
+		TCol.a = Fade*255
+		DrawText("Enter Passanger","SRP_Font20",w/2,h/2,TCol,1)
+	end
+end)

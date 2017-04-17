@@ -1,0 +1,6 @@
+"gearfox"
+{
+	"base"		"base"
+	"title"		"GearFox"
+	"menusystem"	"1"
+}

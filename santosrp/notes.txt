@@ -1,0 +1,19 @@
+Remote Desktop:
+
+
+Server:
+ip: 37.187.77.175
+
+
+
+Dev:
+
+username: maw
+pass: fvdMYfSF7T
+
+
+
+Console:
+
+user: servers
+pass: EBKw6GBedf

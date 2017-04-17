@@ -1,0 +1,2 @@
+MAIN_COLOR 	= Color(30,60,90,200)
+MAIN_COLOR2 = Color(20,20,20,200)

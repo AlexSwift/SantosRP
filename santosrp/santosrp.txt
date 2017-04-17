@@ -1,0 +1,6 @@
+"santosrp"
+{
+	"base"		"gearfox"
+	"title"		"Santos RP"
+	"menusystem"	"1"
+}
