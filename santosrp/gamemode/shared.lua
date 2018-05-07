@@ -1,7 +1,7 @@
 DeriveGamemode("gearfox")
 
 santosRP = santosRP or {}
-santosRP.isBeta = true --need better way to do this
+santosRP.isBeta = false --need better way to do this
 
 AddLuaSVFolder("server/mysql")
 
