@@ -27,7 +27,7 @@ class 'santosRP.Flags' {
 			
 		},
 		
-		protected {
+		public {
 		
 			CreateClass = function( self, class, callback )
 				
